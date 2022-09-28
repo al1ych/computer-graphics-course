@@ -11,12 +11,16 @@ I found these models
 First one is a model of a sedan car
 (It lies in `models/car/car_sedan.obj`)
 The file is pretty clean which enables us to see that both the engine and the model work.
+
 ![img.png](img.png)
+
 https://plugins.qgis.org/wavefronts/25/
 
 There's also this model of Tardis from Doctor Who:
+
 ![img_1.png](img_1.png)
 https://plugins.qgis.org/wavefronts/23/
+
 
 ### Add some depth to the rendered picture
 To quickly visualize depth in this engine, I just multiplied the color components with the z value
@@ -44,4 +48,5 @@ It could be done through argv parameters but I changed it in the default setting
 to these values: `{ near: -3.0, far: 3.0 }`
 
 This is what I managed to get in doing so:
+
 ![img_2.png](img_2.png)
