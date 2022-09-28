@@ -178,7 +178,6 @@ void model::fill_buffers(const std::vector<tinyobj::shape_t>& shapes, const tiny
 	}
 }
 
-
 const std::vector<std::shared_ptr<cg::resource<cg::vertex>>>&
 cg::world::model::get_vertex_buffers() const
 {
