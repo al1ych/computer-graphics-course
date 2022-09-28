@@ -156,21 +156,16 @@ namespace cg::renderer
 						float v = edge2 / edge;
 						float w = edge0 / edge;
 						float depth = u * vertices[0].z + v * vertices[1].z + w * vertices[2].z;
-						auto u_x = static_cast<size_t>(x);
-						auto u_y = static_cast<size_t>(y);
-
-						if (depth_test(depth, u_x, u_y)) {
-							auto pixel_result = pixel_shader(vertices[0], 0.f);
-							render_target->item(u_x, u_y) = RT::from_color(pixel_result);
+						if (depth_test(depth, x, y)) {
+							auto pixel_result = pixel_shader(vertices[0], depth);
+							render_target->item(x, y) = RT::from_color(pixel_result);
 							if (depth_buffer)
-								depth_buffer->item(u_x, u_y) = depth;
+								depth_buffer->item(x, y) = depth;
 						}
 					}
 				}
 			}
 		}
-
-
 	}
 
 	template<typename VB, typename RT>
@@ -190,4 +185,4 @@ namespace cg::renderer
 		return depth_buffer->item(x, y) > z;
 	}
 
-}// namespace cg::renderer
+} // namespace cg::renderer

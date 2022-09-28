@@ -50,9 +50,9 @@ void cg::renderer::rasterization_renderer::render()
 
 	rasterizer->pixel_shader = [](cg::vertex vertex_data, float z) {
 		return cg::color{
-				vertex_data.ambient_r,
-				vertex_data.ambient_g,
-				vertex_data.ambient_b};
+				vertex_data.ambient_r * z,
+				vertex_data.ambient_g * z,
+				vertex_data.ambient_b * z};
 	};
 
 	for (size_t shape_id = 0; shape_id < model->get_index_buffers().size(); shape_id++)
