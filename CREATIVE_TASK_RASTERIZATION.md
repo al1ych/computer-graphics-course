@@ -19,6 +19,7 @@ https://plugins.qgis.org/wavefronts/25/
 There's also this model of Tardis from Doctor Who:
 
 ![img_1.png](img_1.png)
+
 https://plugins.qgis.org/wavefronts/23/
 
 
