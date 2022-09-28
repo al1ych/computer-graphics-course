@@ -158,6 +158,7 @@ namespace cg::renderer
 						float depth = u * vertices[0].z + v * vertices[1].z + w * vertices[2].z;
 						auto u_x = static_cast<size_t>(x);
 						auto u_y = static_cast<size_t>(y);
+
 						if (depth_test(depth, u_x, u_y)) {
 							auto pixel_result = pixel_shader(vertices[0], 0.f);
 							render_target->item(u_x, u_y) = RT::from_color(pixel_result);
