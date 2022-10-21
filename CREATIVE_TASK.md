@@ -61,11 +61,11 @@ This is what I managed to get in doing so:
 
 ### Implement Monte-Carlo method
 
-Uncomment this line in `raytracer_renderer.cpp` to enable random raycasting
-![img_3.png](img_3.png)
-
 ### Play around with different parameters in settings
 
 And see how it affects the result:
 --accumulation_num 128
 --raytracing_depth 12
+
+And play around with code:
+![img_3.png](img_3.png)
