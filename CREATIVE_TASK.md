@@ -64,7 +64,9 @@ This is what I managed to get in doing so:
 ### Play around with different parameters in settings
 
 And see how it affects the result:
+
 --accumulation_num 128
+
 --raytracing_depth 12
 
 And play around with code:
