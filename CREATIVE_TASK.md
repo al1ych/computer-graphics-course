@@ -1,6 +1,9 @@
 # Rasterization creative task
+
 ## Short description
+
 ### Add other models
+
 I added multiple models but they are all very complicated
 and to understand what we see on the screen we need shadows which we don't currently have
 
@@ -22,8 +25,8 @@ There's also this model of Tardis from Doctor Who:
 
 https://plugins.qgis.org/wavefronts/23/
 
-
 ### Add some depth to the rendered picture
+
 To quickly visualize depth in this engine, I just multiplied the color components with the z value
 like this:
 
@@ -52,14 +55,17 @@ This is what I managed to get in doing so:
 
 ![img_2.png](img_2.png)
 
-
 # Raytracing
+
 ## Short decription
+
 ### Implement Monte-Carlo method
+
 Uncomment this line in `raytracer_renderer.cpp` to enable random raycasting
 ![img_3.png](img_3.png)
 
 ### Play around with different parameters in settings
+
 And see how it affects the result:
 --accumulation_num 128
 --raytracing_depth 12
