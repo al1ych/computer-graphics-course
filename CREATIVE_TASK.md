@@ -51,3 +51,10 @@ to these values: `{ near: -3.0, far: 3.0 }`
 This is what I managed to get in doing so:
 
 ![img_2.png](img_2.png)
+
+
+# Raytracing
+## Short decription
+### Implement Monte-Carlo method
+Uncomment this line in `raytracer_renderer.cpp` to enable random raycasting
+![img_3.png](img_3.png)
